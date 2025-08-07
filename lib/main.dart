@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_clean_architecture/l10n/gen/app_localizations.dart';
+import 'package:flutter_clean_architecture/l10n/l10n.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,6 +33,14 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
+      localizationsDelegates: [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: L10n.locals,
+      locale: const Locale('en'),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
