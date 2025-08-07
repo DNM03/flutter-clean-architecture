@@ -44,11 +44,13 @@ lib/
 This project implements Clean Architecture with three main layers:
 
 ### 1. Presentation Layer
+
 - Contains all UI components (screens, widgets)
 - Manages state using your preferred state management solution
 - Depends on the Domain layer but not the Data layer
 
 ### 2. Domain Layer
+
 - Contains business logic and rules
 - Defines entities that represent your business objects
 - Defines repository interfaces that the Data layer will implement
@@ -56,6 +58,7 @@ This project implements Clean Architecture with three main layers:
 - Independent of any framework or external dependency
 
 ### 3. Data Layer
+
 - Implements repository interfaces from the Domain layer
 - Manages data sources (local storage, APIs, etc.)
 - Handles data transformation between Domain entities and Data models
@@ -64,11 +67,13 @@ This project implements Clean Architecture with three main layers:
 ## Getting Started
 
 1. Clone this repository:
+
    ```
    git clone https://github.com/DNM03/flutter-clean-architecture.git
    ```
 
 2. Install dependencies:
+
    ```
    cd flutter_clean_architecture
    flutter pub get
@@ -107,6 +112,16 @@ This boilerplate is designed to work with common Flutter packages such as:
 - **Dependency Injection**: GetIt, injectable, or Provider
 - **Networking**: Dio or http
 - **Local Storage**: SharedPreferences, Hive, or SQLite
+
+## Localization
+
+This project supports localization using Flutter's `gen-l10n` tool.
+
+To generate the localization files, run the following command:
+
+```bash
+flutter gen-l10n
+```
 
 ## Contribution
 
