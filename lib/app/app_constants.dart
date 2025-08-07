@@ -1,0 +1,1 @@
+// app-wide constants
