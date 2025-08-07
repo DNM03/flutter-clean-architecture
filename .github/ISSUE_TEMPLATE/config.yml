@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Bug Report
+    url: /issues/new?template=bug_template.yml
+    about: Report a bug.
+  - name: Feature Request
+    url: /issues/new?template=feature_template.yml
+    about: Suggest a new feature.
+  - name: Enhancement Request
+    url: /issues/new?template=enhancement_template.yml
+    about: Suggest a new enhancement

@@ -1,0 +1,21 @@
+name: "💡 Enhancement Request"
+description: Suggest an improvement or new enhancement for the project
+title: "💡 [Enhancement] - <title>"
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: ✏️ Describe what you expected to happen.
+      placeholder: Describe in a few lines or image your enhancement request.
+    validations:
+      required: true
+  - type: textarea
+    id: document_reference
+    attributes:
+      label: "Document Reference"
+      description: 📌 Any other web link related to the enhancement request.
+      placeholder: Pin some links
+    validations:
+      required: false
