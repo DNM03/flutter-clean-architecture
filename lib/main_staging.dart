@@ -9,7 +9,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   try {
-    await dotenv.load(fileName: ".env.development");
+    await dotenv.load(fileName: ".env.staging");
     await initServices();
     FlavorConfig(
       flavor: Flavor.development,
